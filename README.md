@@ -44,7 +44,7 @@ There are 261 unqiue categories in total and many of them are very redundant. He
 
 After the one-hot encoding, the category column is extended to 197 columns. The data matrix is very spatial that each raw having a lot of 0s and a single 1. We are going to do futher aggregation based on this dataset after the spatial clustering is done.
 
-The top 25 and last 25 total number of unique categories are shown here.
+The top 25 and 100 to 125 total number of unique categories are shown here.
 
 <div align="center">
         <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/originalVenuesnumbers.png" width="800px"</img> 
@@ -245,13 +245,23 @@ K-means clustering could perform well in clustering problems. However, we need t
         <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/kmeansMap.png" width="800px"</img> 
 </div>
 
-Now the 54 grouped areas are labeled into 4 clusters. We could do some further analysis to help people determine which area they would want to stay.
+Now the 54 grouped areas are labeled into 4 clusters. We could do some further analysis to help people determine which area they would want to stay. 
 
 ### Analysis
+
+The top 10 Venues (with most numbers) of the 4 clusters are plotted below. According to the map, it is very clear that the cluster 1 having the most venues. The cluster 3 only has one data point, which would be least representative. 
+
+In the cluster 3, this single data point has categories with very low appearance, such as 'Hobby Shop', 'Theater' and 'Field'. This data point can be considered as an outlier that not belong to areas with common venues.
+
+The cluster 1 combine the areas with a lot of non-popular (other restaurants) and popular (Japanese, pizza, Cafe, Bar & Club) categorized restaurants. Places like century city westfield with many restaurants are clustered into the same group. People who love to try different kinds of food can pay attention to these areas.
 
 <div align="center">
         <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/Top10VenunesinClusters.png" width="800px"</img> 
 </div>
+
+Let's normalize the venue numbers to be ratios and compare the cluster 0, 1 and 2 with the total venues ratio. The cluster 0 grouped a lot of places for physical training (gyms and dance studios). Other functional places such as Landscapes (parks, gardens) and pharmacy are grouped. People who are more interested in going to gym or having some outdoor places for walking, running or jogging can pay attention to cluster 0 areas.
+
+One big difference between cluster 1 and cluster 2 is that there are more bars and hotels in the cluster 2 area. This can be a good choice for visitors and tourists. As we expected, Beverly Hills and the areas between Beverly Hills and West Hollywood are grouped in cluster 2. Vistors could choose a plcae around here to stay and have fun. 
 
 <div align="center">
         <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/Top10VenueRatios.png" width="800px"</img> 
@@ -260,3 +270,9 @@ Now the 54 grouped areas are labeled into 4 clusters. We could do some further a
 <div align="center">
         <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/VenueRatiosComparison.png" width="800px"</img> 
 </div>
+
+## Future Study
+
+Unsupervised learning or clustering is usually very unstable. It would be very sensitive to the data we have. This project can only show a way to do information aggregation and interpretation so that we could give some advice to people who want to relocate in te west Los Angeles area. To have a systametical recommendation method, we could qunatify functions of each area and the distance between venue-gathering areas and people's relocation choices. And we can calculate a rate or score to help people have a more straight-forward method to make a choice. A prototype would be discussed and designed in another jupyternote book. There could be different designs or solutions and I will just show an idea about it. I think there can be a good extention based on this idea. 
+
+However, restricted to the data we have, it is still hard to transfer this recommendation problem from unsupervised learning to supervised learning. If we can have the real estate price in each area, we can give a better analysis for those people who want to buy a house in west Los Angeles.
