@@ -105,38 +105,38 @@ The number of noises: 414
 -------------------------------------
 Total number of Venues clustered: 1220
 -------------------------------------
-The number of Venues in Cluster 0 is 13
-The number of Venues in Cluster 1 is 99
-The number of Venues in Cluster 2 is 36
-The number of Venues in Cluster 3 is 101
-The number of Venues in Cluster 4 is 61
-The number of Venues in Cluster 5 is 14
-The number of Venues in Cluster 6 is 20
-The number of Venues in Cluster 7 is 70
-The number of Venues in Cluster 8 is 46
-The number of Venues in Cluster 9 is 23
-The number of Venues in Cluster 10 is 20
-The number of Venues in Cluster 11 is 53
-The number of Venues in Cluster 12 is 17
-The number of Venues in Cluster 13 is 49
-The number of Venues in Cluster 14 is 13
-The number of Venues in Cluster 15 is 21
-The number of Venues in Cluster 16 is 62
-The number of Venues in Cluster 17 is 65
-The number of Venues in Cluster 18 is 32
-The number of Venues in Cluster 19 is 55
-The number of Venues in Cluster 20 is 18
-The number of Venues in Cluster 21 is 39
-The number of Venues in Cluster 22 is 58
-The number of Venues in Cluster 23 is 50
-The number of Venues in Cluster 24 is 29
-The number of Venues in Cluster 25 is 16
-The number of Venues in Cluster 26 is 59
-The number of Venues in Cluster 27 is 19
-The number of Venues in Cluster 28 is 31
-The number of Venues in Cluster 29 is 10
-The number of Venues in Cluster 30 is 11
-The number of Venues in Cluster 31 is 10
+The number of Venues in Cluster 0 is 13, 
+The number of Venues in Cluster 1 is 99, 
+The number of Venues in Cluster 2 is 36, 
+The number of Venues in Cluster 3 is 101, 
+The number of Venues in Cluster 4 is 61, 
+The number of Venues in Cluster 5 is 14, 
+The number of Venues in Cluster 6 is 20, 
+The number of Venues in Cluster 7 is 70, 
+The number of Venues in Cluster 8 is 46, 
+The number of Venues in Cluster 9 is 23, 
+The number of Venues in Cluster 10 is 20, 
+The number of Venues in Cluster 11 is 53, 
+The number of Venues in Cluster 12 is 17, 
+The number of Venues in Cluster 13 is 49, 
+The number of Venues in Cluster 14 is 13, 
+The number of Venues in Cluster 15 is 21, 
+The number of Venues in Cluster 16 is 62, 
+The number of Venues in Cluster 17 is 65, 
+The number of Venues in Cluster 18 is 32, 
+The number of Venues in Cluster 19 is 55, 
+The number of Venues in Cluster 20 is 18, 
+The number of Venues in Cluster 21 is 39, 
+The number of Venues in Cluster 22 is 58, 
+The number of Venues in Cluster 23 is 50, 
+The number of Venues in Cluster 24 is 29, 
+The number of Venues in Cluster 25 is 16, 
+The number of Venues in Cluster 26 is 59, 
+The number of Venues in Cluster 27 is 19, 
+The number of Venues in Cluster 28 is 31, 
+The number of Venues in Cluster 29 is 10, 
+The number of Venues in Cluster 30 is 11, 
+The number of Venues in Cluster 31 is 10.
 
 ### Second Round
 
@@ -149,28 +149,28 @@ The number of noises: 57
 -------------------------------------
 Total number of Venues clustered: 357
 -------------------------------------
-The number of Venues in Cluster 0 is 69
-The number of Venues in Cluster 1 is 16
-The number of Venues in Cluster 2 is 14
-The number of Venues in Cluster 3 is 21
-The number of Venues in Cluster 4 is 16
-The number of Venues in Cluster 5 is 5
-The number of Venues in Cluster 6 is 7
-The number of Venues in Cluster 7 is 13
-The number of Venues in Cluster 8 is 39
-The number of Venues in Cluster 9 is 10
-The number of Venues in Cluster 10 is 5
-The number of Venues in Cluster 11 is 6
-The number of Venues in Cluster 12 is 10
-The number of Venues in Cluster 13 is 7
-The number of Venues in Cluster 14 is 39
-The number of Venues in Cluster 15 is 5
-The number of Venues in Cluster 16 is 9
-The number of Venues in Cluster 17 is 30
-The number of Venues in Cluster 18 is 8
-The number of Venues in Cluster 19 is 16
-The number of Venues in Cluster 20 is 7
-The number of Venues in Cluster 21 is 5
+The number of Venues in Cluster 0 is 69, 
+The number of Venues in Cluster 1 is 16, 
+The number of Venues in Cluster 2 is 14, 
+The number of Venues in Cluster 3 is 21, 
+The number of Venues in Cluster 4 is 16, 
+The number of Venues in Cluster 5 is 5, 
+The number of Venues in Cluster 6 is 7, 
+The number of Venues in Cluster 7 is 13, 
+The number of Venues in Cluster 8 is 39, 
+The number of Venues in Cluster 9 is 10, 
+The number of Venues in Cluster 10 is 5, 
+The number of Venues in Cluster 11 is 6, 
+The number of Venues in Cluster 12 is 10, 
+The number of Venues in Cluster 13 is 7, 
+The number of Venues in Cluster 14 is 39, 
+The number of Venues in Cluster 15 is 5, 
+The number of Venues in Cluster 16 is 9, 
+The number of Venues in Cluster 17 is 30, 
+The number of Venues in Cluster 18 is 8, 
+The number of Venues in Cluster 19 is 16, 
+The number of Venues in Cluster 20 is 7, 
+The number of Venues in Cluster 21 is 5.
 
 ### Evaluation of DBSCAN
 
@@ -244,6 +244,8 @@ K-means clustering could perform well in clustering problems. However, we need t
 <div align="center">
         <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/kmeansMap.png" width="800px"</img> 
 </div>
+
+Now the 54 grouped areas are labeled into 4 clusters. We could do some further analysis to help people determine which area they would want to stay.
 
 ### Analysis
 
