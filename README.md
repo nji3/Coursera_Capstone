@@ -31,7 +31,7 @@ Because each center point among those 100 points is used to explore in a 500 rad
 Plot each venue on to the map by the location coordinates. Each venue is displayed as a blue point. The daker space means more points are closely gathering together on the map.
 
 <div align="center">
-        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/allVenuesMap.png" width="400px"</img> 
+        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/allVenuesMap.png" width="800px"</img> 
 </div>
 
 ## Data Cleaning and Preparation
@@ -47,7 +47,7 @@ After the one-hot encoding, the category column is extended to 197 columns. The 
 The top 25 and last 25 total number of unique categories are shown here.
 
 <div align="center">
-        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/originalVenuesnumbers.png" width="400px"</img> 
+        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/originalVenuesnumbers.png" width="800px"</img> 
 </div>
 
 The categories are too detailed, which cause the problem that many categories only have one Venue (observation). This would cause a lot of meaningless dimension for the clustering and also cause the information loss. We need to check the categories again and combine them a bit more.
@@ -69,7 +69,7 @@ categories contain 'Gym', 'Dance', 'Recreation' ---> 'Gym and Physics Training'
 After the cleaning, there are 194 unqiue combined categories left. The top 25 unique combined categories after the cleaning:
 
 <div align="center">
-        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/cleaneddataVenues.png" width="400px"</img> 
+        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/cleaneddataVenues.png" width="800px"</img> 
 </div>
 
 Now we can use the cleaned categories to do the **one-hot encoding**.
@@ -97,7 +97,7 @@ Because we only use location coordinates for the DBSCAN, the data points will be
 ### First Round
 
 <div align="center">
-        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/firstDCSCAN.png" width="400px"</img> 
+        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/firstDCSCAN.png" width="800px"</img> 
 </div>
 
 -------------------------------------
@@ -106,73 +106,42 @@ The number of noises: 414
 Total number of Venues clustered: 1220
 -------------------------------------
 The number of Venues in Cluster 0 is 13
-
 The number of Venues in Cluster 1 is 99
-
 The number of Venues in Cluster 2 is 36
-
 The number of Venues in Cluster 3 is 101
-
 The number of Venues in Cluster 4 is 61
-
 The number of Venues in Cluster 5 is 14
-
 The number of Venues in Cluster 6 is 20
-
 The number of Venues in Cluster 7 is 70
-
 The number of Venues in Cluster 8 is 46
-
 The number of Venues in Cluster 9 is 23
-
 The number of Venues in Cluster 10 is 20
-
 The number of Venues in Cluster 11 is 53
-
 The number of Venues in Cluster 12 is 17
-
 The number of Venues in Cluster 13 is 49
-
 The number of Venues in Cluster 14 is 13
-
 The number of Venues in Cluster 15 is 21
-
 The number of Venues in Cluster 16 is 62
-
 The number of Venues in Cluster 17 is 65
-
 The number of Venues in Cluster 18 is 32
-
 The number of Venues in Cluster 19 is 55
-
 The number of Venues in Cluster 20 is 18
-
 The number of Venues in Cluster 21 is 39
-
 The number of Venues in Cluster 22 is 58
-
 The number of Venues in Cluster 23 is 50
-
 The number of Venues in Cluster 24 is 29
-
 The number of Venues in Cluster 25 is 16
-
 The number of Venues in Cluster 26 is 59
-
 The number of Venues in Cluster 27 is 19
-
 The number of Venues in Cluster 28 is 31
-
 The number of Venues in Cluster 29 is 10
-
 The number of Venues in Cluster 30 is 11
-
 The number of Venues in Cluster 31 is 10
 
 ### Second Round
 
 <div align="center">
-        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/secondDCSCAN.png" width="400px"</img> 
+        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/secondDCSCAN.png" width="800px"</img> 
 </div>
 
 -------------------------------------
@@ -181,47 +150,26 @@ The number of noises: 57
 Total number of Venues clustered: 357
 -------------------------------------
 The number of Venues in Cluster 0 is 69
-
 The number of Venues in Cluster 1 is 16
-
 The number of Venues in Cluster 2 is 14
-
 The number of Venues in Cluster 3 is 21
-
 The number of Venues in Cluster 4 is 16
-
 The number of Venues in Cluster 5 is 5
-
 The number of Venues in Cluster 6 is 7
-
 The number of Venues in Cluster 7 is 13
-
 The number of Venues in Cluster 8 is 39
-
 The number of Venues in Cluster 9 is 10
-
 The number of Venues in Cluster 10 is 5
-
 The number of Venues in Cluster 11 is 6
-
 The number of Venues in Cluster 12 is 10
-
 The number of Venues in Cluster 13 is 7
-
 The number of Venues in Cluster 14 is 39
-
 The number of Venues in Cluster 15 is 5
-
 The number of Venues in Cluster 16 is 9
-
 The number of Venues in Cluster 17 is 30
-
 The number of Venues in Cluster 18 is 8
-
 The number of Venues in Cluster 19 is 16
-
 The number of Venues in Cluster 20 is 7
-
 The number of Venues in Cluster 21 is 5
 
 ### Evaluation of DBSCAN
@@ -238,7 +186,7 @@ Further Data Preparation
 Now based on the clusters from the spatial clustering step, we could relabel each data point with an id of a group they belong to. We could visualize the number of venues clustered into each group. The -1 label means the group of noises. Ignoring the noise group, there are 54 groups intotal. We would do further aggregation of the data into each group and calculate the mean value of venues for each group based on the one-hot data matrix.
 
 <div align="center">
-        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/numberofVenuesDCSCAN.png" width="400px"</img> 
+        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/numberofVenuesDCSCAN.png" width="800px"</img> 
 </div>
 
 ### Store top venues into the dataframe
@@ -246,7 +194,7 @@ Now based on the clusters from the spatial clustering step, we could relabel eac
 Because now we have the mean value of venues in each group, we could sort the aggregated data and show the top 10 most common venues in each group.
 
 <div align="center">
-        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/top10MostCommon.png" width="400px"</img> 
+        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/top10MostCommon.png" width="800px"</img> 
 </div>
 
 ## Part 2: K-Means Clustering evaluating the similarities among the groups
@@ -264,7 +212,7 @@ Explained Variance Ratio in Top 50 Components: 0.9978814305591085.
 The top 50 principle components explained more than 99% of the variance in the original dataset. We could simply used the transformed data for model fitting. The transformed dataset now has the shape 54x50.
 
 <div align="center">
-        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/PCA.png" width="400px"</img> 
+        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/PCA.png" width="800px"</img> 
 </div>
 
 However, according to the plots of the first three principle components, the dataset are not clearly seperated. We would use the tranformed data for T-SNE to see if we can have better seperations.
@@ -276,7 +224,7 @@ t-Distributed Stochastic Neighbor Embedding (t-SNE) is another technique for dim
 Essentially what this means is that it looks at the original data that is entered into the algorithm and looks at how to best represent this data using less dimensions by matching both distributions. The way it does this is computationally quite heavy and therefore there are some (serious) limitations to the use of this technique. For example one of the recommendations is that, in case of very high dimensional data, you may need to apply another dimensionality reduction technique before using t-SNE, such as PCA.
 
 <div align="center">
-        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/Tsne.png" width="400px"</img> 
+        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/Tsne.png" width="800px"</img> 
 </div>
 
 The T-SNE plots give us a chance to distinguish some outliers but they cannot help cluster the data. For better clustering purpose, we are going to apply the K-Means clustering on the transformed data.
@@ -291,28 +239,22 @@ K-means clustering could perform well in clustering problems. However, we need t
 
 ### Plot the map after K-Means clustering
 
-**Red: Cluster 0**
-
-**Purpule: Cluster 1**
-
-**Blue: Cluster 2**
-
-**Yellow: Cluster 3**
+**Red: Cluster 0**, **Purpule: Cluster 1**, **Blue: Cluster 2**, **Yellow: Cluster 3**
 
 <div align="center">
-        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/kmeansMap.png" width="400px"</img> 
+        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/kmeansMap.png" width="800px"</img> 
 </div>
 
 ### Analysis
 
 <div align="center">
-        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/Top10VenunesinClusters.png" width="400px"</img> 
+        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/Top10VenunesinClusters.png" width="800px"</img> 
 </div>
 
 <div align="center">
-        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/Top10VenueRatios.png" width="400px"</img> 
+        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/Top10VenueRatios.png" width="800px"</img> 
 </div>
 
 <div align="center">
-        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/VenueRatiosComparison.png" width="400px"</img> 
+        <img src="https://github.com/nji3/Coursera_Capstone/blob/master/readme_images/VenueRatiosComparison.png" width="800px"</img> 
 </div>
